@@ -8,6 +8,9 @@ gap_data = pd.read_csv('world-data-gapminder_raw.csv')
 gap_data = gap_data.groupby(['sub_region', 'year']).mean()
 
 app = Dash(__name__,  external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+
+server = app.server
+
 app.layout = html.Div([
     dcc.Dropdown(
         id='ycol-widget', value='life_expectancy',

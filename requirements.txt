@@ -1,5 +1,4 @@
 altair
-pandas
 Brotli==1.0.9
 click==8.0.3
 dash==2.1.0
